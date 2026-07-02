@@ -53,3 +53,18 @@
  }
  var squareNumbers = sqroot(4);
  document.write("The square Root of 4 is: " +  squareNumbers);
+
+
+//  Question 6 
+
+ document.write( "<h1>" + "Question 6" + "<br>"  + "</h1>");
+
+ function factorial(facNumber){
+    var fac = 1;
+    for(var i = 1; i <= facNumber; i++){
+        fac = fac*1;
+    }
+    return fac;
+ }
+ var fact = factorial(6);
+ document.write("The factorial of 6 is:" + fact);

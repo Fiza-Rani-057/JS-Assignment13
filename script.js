@@ -111,5 +111,16 @@
     var calculateArea = Area(5, 7);
     document.write(calculateArea);
 
+    // Question 10 
 
+    function palindrome(str){
+    var check = str.split(" ").reverse().join("");
+    }
+  if(str === check){
+  document.write("Palindrome");
+ }
+   else{
+  document.write("Not a Palindrome");
+ }
 
+ document.write(palindrome("madam"));

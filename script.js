@@ -68,3 +68,14 @@
  }
  var fact = factorial(6);
  document.write("The factorial of 6 is:" + fact);
+
+//  Question 7 
+
+  document.write( "<h1>" + "Question 7" + "<br>"  + "</h1>");
+
+  function counting(start,end){
+    for(var i = start; i <= end; i++){
+      document.write( i, "<br>");
+    }
+  }
+  counting(1, 20);

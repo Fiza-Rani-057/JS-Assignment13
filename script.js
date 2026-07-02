@@ -97,5 +97,5 @@
 
       return hypotenous;
    }
-   var calculate = calculateHypotenuse(8,9);
-    document.write(calculate);
+   var calculate = Hypotenuse(8,9);
+    document.write(Math.round(calculate));

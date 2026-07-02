@@ -79,3 +79,23 @@
     }
   }
   counting(1, 20);
+
+   document.write( "<h1>" + "Question 8" + "<br>"  + "</h1>");
+  // Condition 
+  // Right angle triangle.  Hypotenuse2 = Base2 + Perpendicular 
+  //  Take base and perpendicular as inputs. Outer function
+  //  : calculateHypotenuse()
+  //  Inner function: calculateSquare() 
+
+   function calculateHypotenuse(base, perpendicular){
+     function calculateSquare(number){
+      return number * number;
+     }
+     var baseSquare = calculateSquare(base);
+     var perpendicularSquare = calculateSquare(perpendicular);
+      var hypotenous = Math.sqrt(baseSquare + perpendicularSquare);
+
+      return hypotenous;
+   }
+   var calculate = calculateHypotenuse(8,9);
+    document.write(calculate);

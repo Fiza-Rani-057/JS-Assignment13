@@ -199,9 +199,9 @@
     var Area = Math.PI *radius * radius;
      return Area;
   }
-  var circumferenceResult = calcCircumference(6);
+  var circumferenceResult = calcCircumference(5);
   document.write( "The circumference is: " + Math.round(circumferenceResult)+ "<br>");
-  var areaResult = calcArea(7);
+  var areaResult = calcArea(6);
    document.write( "The Area is: " + Math.round(areaResult));
 
 

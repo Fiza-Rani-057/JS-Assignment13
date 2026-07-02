@@ -153,9 +153,9 @@
 
    function longestWord(longeststring){
    var word = longeststring.split(" ");
-   var longest = " ";
+   var longest = "";
 
-   for(var i = 0; i<= word.length; i++){
+   for(var i = 0; i< word.length; i++){
     if(word[i].length > longest.length){
       longest = word[i];
     }
@@ -165,3 +165,44 @@
    var result = longestWord("Web Development Tutoria");
    document.write(result);
 
+  //  Question 13 
+
+   document.write( "<h1>" + "Question 13" + "<br>"  + "</h1>"); 
+
+  function countLetter(stringg, letter) {
+    var count = 0;
+
+    for (var i = 0; i < stringg.length; i++) {
+        if (stringg[i] === letter) {
+            count++;
+        }
+    }
+    return count;
+}
+
+ var countResult = countLetter("JSResourceS.com", "o");
+   document.write(countResult);
+
+
+  //  Question 14 
+
+  document.write( "<h1>" + "Question 14" + "<br>"  + "</h1>"); 
+
+  // Function 1
+
+  function calcCircumference(radius){
+    var circumference = 2 * Math.PI *radius;
+   return circumference;
+  }
+
+  function calcArea(radius) {
+    var Area = Math.PI *radius * radius;
+     return Area;
+  }
+  var circumferenceResult = calcCircumference(6);
+  document.write( "The circumference is: " + Math.round(circumferenceResult)+ "<br>");
+  var areaResult = calcArea(7);
+   document.write( "The Area is: " + Math.round(areaResult));
+
+
+ 

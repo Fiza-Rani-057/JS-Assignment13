@@ -113,14 +113,37 @@
 
     // Question 10 
 
-    function palindrome(str){
-    var check = str.split(" ").reverse().join("");
-    }
-  if(str === check){
-  document.write("Palindrome");
- }
-   else{
-  document.write("Not a Palindrome");
- }
+      document.write( "<h1>" + "Question 10" + "<br>"  + "</h1>");
 
- document.write(palindrome("madam"));
+    function palindrome(str){
+    var check = str.split(" ").reverse().join(" ");
+   if(str === check){
+  return "Palindrome";
+  }
+   else{
+   return "Not a Palindrome";
+   }
+  }
+
+  var returnpalindrome = palindrome("madam");
+  document.write(returnpalindrome);
+
+
+ //  Question 11
+
+   document.write( "<h1>" + "Question 11" + "<br>"  + "</h1>");
+
+   function titleCase(string){
+     
+    var sentence = string.split(" ");
+
+    for(var j = 0; j < sentence.length; j++){
+      sentence[j]= sentence[j].charAt(0).toUpperCase() + sentence[j].slice(1);
+    }
+     return sentence.join(" ");
+   }
+
+   var convertNumbers = titleCase("the quick brown fox");
+   document.write(convertNumbers);
+
+

@@ -134,7 +134,7 @@
    document.write( "<h1>" + "Question 11" + "<br>"  + "</h1>");
 
    function titleCase(string){
-     
+
     var sentence = string.split(" ");
 
     for(var j = 0; j < sentence.length; j++){
@@ -146,4 +146,22 @@
    var convertNumbers = titleCase("the quick brown fox");
    document.write(convertNumbers);
 
+  //  Question 12 
+
+ 
+   document.write( "<h1>" + "Question 12" + "<br>"  + "</h1>");
+
+   function longestWord(longeststring){
+   var word = longeststring.split(" ");
+   var longest = " ";
+
+   for(var i = 0; i<= word.length; i++){
+    if(word[i].length > longest.length){
+      longest = word[i];
+    }
+   }
+   return longest;
+   }
+   var result = longestWord("Web Development Tutoria");
+   document.write(result);
 

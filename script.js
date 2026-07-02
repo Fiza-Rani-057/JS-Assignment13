@@ -89,13 +89,27 @@
 
    function calculateHypotenuse(base, perpendicular){
      function calculateSquare(number){
-      return number * number;
+     return number*number;
      }
      var baseSquare = calculateSquare(base);
      var perpendicularSquare = calculateSquare(perpendicular);
-      var hypotenous = Math.sqrt(baseSquare + perpendicularSquare);
+    var hypotenous = Math.sqrt(baseSquare + perpendicularSquare);
 
       return hypotenous;
    }
-   var calculate = Hypotenuse(8,9);
+   var calculate = calculateHypotenuse(8,9);
     document.write(Math.round(calculate));
+
+    // Question 9 
+
+    document.write( "<h1>" + "Question 9" + "<br>"  + "</h1>");
+
+    function Area(width, heigt){
+      var area = width * heigt;
+      return area;
+    }
+    var calculateArea = Area(5, 7);
+    document.write(calculateArea);
+
+
+

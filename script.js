@@ -62,7 +62,7 @@
  function factorial(facNumber){
     var fac = 1;
     for(var i = 1; i <= facNumber; i++){
-        fac = fac*1;
+        fac = fac*i;
     }
     return fac;
  }
